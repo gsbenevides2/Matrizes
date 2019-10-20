@@ -2,10 +2,11 @@ import React from 'react';
 import {Presentation,RightDiv,Love} from './styles.js'
 import ExpressionKeyboard from './components/ExpressionKeyboard'
 import Matriz from './components/Matriz'
-import {Layout ,Header,Content,Navigation,Grid,Cell,Textfield,Button} from "react-mdl";
+import {Layout ,Header,Content,Grid,Cell,Textfield,Button} from "react-mdl";
 
 export default function App(){
-	let linhElement,colElement,razaoElement,matriz
+	let linhElement,colElement,razaoElement,matriz,form 
+	const [voltar,setVoltar] = React.useState(false)
 	function handleSubmit(e){
 		e.preventDefault()
 		if(linhElement.inputRef.value === "" || colElement.inputRef.value === "" || razaoElement.val() === null){
@@ -15,15 +16,21 @@ export default function App(){
 		}
 		else{
 			matriz.abrir(linhElement.inputRef.value, colElement.inputRef.value,razaoElement.val())
+			form.style.display = "none";
+			setVoltar(true)
 		}
+	}
+	function fechar(){
+		matriz.fechar()
+		form.style.display = "block";
+		setVoltar(false)
 	}
 	return (
 		<Layout>
 			<Header style={{display:"block"}} title="Matrizes">
-				<Navigation/>
 			</Header>
 			<Content>
-				<form autocomplete="off" onSubmit={handleSubmit}> <Grid>
+				<form ref={ref=>form=ref} autocomplete="off" onSubmit={handleSubmit}> <Grid>
 					<Cell col={12} phone={4} >
 						<Presentation> <b>Seja bem-vindo :)</b><br/>Antes de começar preciso que me passe algumas informações.</Presentation>
 					</Cell>
@@ -46,8 +53,17 @@ export default function App(){
 					<Cell style={{textAlign:'center'}} col={12}>
 						<Love href="https://github.com/gsbenevides2/Matrizes"> Feito com <span role="img" arial-label="love">❤️</span> por Gsbenevides2</Love>
 					</Cell>
-					<Matriz ref={(ref)=>{matriz=ref}}/>
 				</Grid></form>
+				<Grid>
+					<Cell col={12}>
+						<Matriz ref={(ref)=>{matriz=ref}}/>
+					</Cell>
+					<Cell col={12}>
+						<RightDiv>
+							{ voltar && <Button onClick={fechar} colored raised ripple>Voltar</Button> }
+						</RightDiv>
+					</Cell>
+				</Grid>
 			</Content>
 		</Layout>
 	)
