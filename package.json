@@ -10,11 +10,13 @@
    },
    "dependencies": {
       "gh-pages": "^2.1.1",
+      "global": "^4.4.0",
       "react": "^16.10.2",
       "react-ace": "^8.0.0",
       "react-dom": "^16.4.2",
       "react-mdl": "^1.11.0",
       "react-scripts": "1.1.4",
+      "serve": "^11.2.0",
       "styled-components": "^4.4.0"
    },
    "license": "MIT",
