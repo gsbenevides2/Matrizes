@@ -1,0 +1,51 @@
+.textarea{
+	height:72px;
+	border-bottom: solid 1px #ccc;
+	position:relative;
+	transition: all .3s ease-in-out;
+}
+.textarea textarea:focus{
+	box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+/*
+.textarea textarea:focus label{
+	top:0;
+}*/
+.textarea textarea{
+	padding:0px;
+	width:100%;
+	border: none;
+	height:60px;
+	font-size: 14px;
+}
+.textarea label{
+	font-size:16px;
+	font-weight:700;
+	top:50%;
+	left:0;
+	transform:translateY(-50%);
+	position:absolute;
+	color:#fad201;
+	transition: all .3s ease-in-out;
+	
+}
+.textarea.active{
+	border-bottom: solid 4px #fad201;
+}
+.textarea.active label{
+	transform: translate(0, -250%) scale(.75);
+}
+.textarea.invalid{
+	border-color:red;
+}
+.textarea.invalid label{
+	color:red;
+}
+.textarea .erro{
+	display:block;
+	color:red;
+	padding-top:5px;
+	text-size:12px;
+}
