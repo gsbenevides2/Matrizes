@@ -27,7 +27,7 @@ coverage
 bower_components
 
 # React build
-build
+build/
 
 # node-waf configuration
 .lock-wscript
