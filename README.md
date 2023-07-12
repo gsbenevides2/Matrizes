@@ -27,6 +27,7 @@ Gerador de matrizes matemáticas a partir de código javascript. Construído em 
 <ul>
     <li>React Ace: Editor de código</li>
     <li>React MDL: Componentes de interface</li>
+    <li>Styled Components: Estilização</li>
 </ul>
 
 <p align="center">Feito com 💛 por <a href="https://gui.dev.br">gsbenevides2</a></p>
