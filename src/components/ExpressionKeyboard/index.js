@@ -8,11 +8,15 @@ const TextArea = styled.div`
 	width:100%
 `
 
+const defaultValue = `//i = linha, j = coluna
+return (2 * i) + j`
+
 export default class ExpressionKeyboard extends Component{
 	constructor(props){
 		super(props)
 		this.onChange = this.onChange.bind(this)
 		this.val = this.val.bind(this)
+		this.value = defaultValue
 	}
 	onChange(e){
 		this.value = e
@@ -29,21 +33,22 @@ export default class ExpressionKeyboard extends Component{
 	render(){
 		return (
 			<TextArea>
-				<p>Use o editor abaixo para criar o codigo da funcao que retornara o valor de cada elemento.Não esqueça do return!!!</p>
+				<p>Use o editor abaixo para criar o codigo da funcao em javascript que retornara o valor de cada elemento(lei de formação). Não esqueça do return!!!</p>
 				<AceEditor
 					width="100%"
 					mode="javascript"
-					theme="girhub"
+					theme="github"
 					name="blah2"
 					onChange={this.onChange}
 					fontSize={14}
 					showPrintMargin={true}
 					showGutter={true}
 					highlightActiveLine={true}
-					value={``}
+					value={defaultValue}
 					setOptions={{
 						showLineNumbers: true,
 						tabSize: 2,
+						useWorker: false
 					}}
 				/>  
 			</TextArea>

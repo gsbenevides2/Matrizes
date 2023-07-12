@@ -1,9 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {createRoot} from 'react-dom/client';
 import 'react-mdl/extra/css/material.amber-indigo.min.css';
 import 'react-mdl/extra/material.min.js';
-import App from "./App"
-import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import App from "./App"
+import * as registerServiceWorker from './registerServiceWorker';
+
+
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
+registerServiceWorker.register();
