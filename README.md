@@ -4,7 +4,7 @@
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 <img src="https://img.shields.io/badge/CSS3-F7DF1E?style=for-the-badge&logo=css3&logoColor=black">
 <img src="https://img.shields.io/badge/React-F7DF1E?style=for-the-badge&logo=react&logoColor=black">
-<br><a href="https://matrizes.gui.dev.br">Veja ao vivo</a>
+<br><a href="https://matrizes.gui.dev.br" target="_blank">Veja ao vivo</a>
 </p>
 <hr>
 
@@ -29,6 +29,9 @@ Gerador de matrizes matemáticas a partir de código javascript. Construído em 
     <li>React MDL: Componentes de interface</li>
     <li>Styled Components: Estilização</li>
 </ul>
+
+<h2>📃 Licença</h2>
+<p>Este projeto está sobre a licença MIT. Veja ela em: <a href="LICENSE">LICENSE</a>.</p>
 
 <p align="center">Feito com 💛 por <a href="https://gui.dev.br">gsbenevides2</a></p>
 
