@@ -32,7 +32,7 @@ Gerador de matrizes matemáticas a partir de código javascript. Construído em 
 
 <h2>📃 Licença</h2>
 <p>Este projeto está sobre a licença MIT. Veja ela em: <a href="LICENSE">LICENSE</a>.</p>
-
+<hr>
 <p align="center">Feito com 💛 por <a href="https://gui.dev.br">gsbenevides2</a></p>
 
 
