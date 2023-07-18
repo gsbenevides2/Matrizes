@@ -4,6 +4,7 @@
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 <img src="https://img.shields.io/badge/CSS3-F7DF1E?style=for-the-badge&logo=css3&logoColor=black">
 <img src="https://img.shields.io/badge/React-F7DF1E?style=for-the-badge&logo=react&logoColor=black">
+<img src="https://img.shields.io/badge/PWA-F7DF1E?style=for-the-badge&logo=pwa&logoColor=black">
 <br><a href="https://matrizes.gui.dev.br" target="_blank">Veja ao vivo</a>
 </p>
 
@@ -21,6 +22,7 @@ Gerador de matrizes matemáticas a partir de código javascript. Construído em 
     <li>JavaScript</li>
     <li>HTML</li>
     <li>CSS</li>
+    <li>PWA: Aplicações Progressivas da WEB</li>
 </ul>
 <h3>📚 Bibliotecas</h3>
 <ul>
