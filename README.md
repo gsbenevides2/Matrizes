@@ -6,7 +6,6 @@
 <img src="https://img.shields.io/badge/React-F7DF1E?style=for-the-badge&logo=react&logoColor=black">
 <br><a href="https://matrizes.gui.dev.br" target="_blank">Veja ao vivo</a>
 </p>
-<hr>
 
 <p align="justify">
 Gerador de matrizes matemáticas a partir de código javascript. Construído em React, essa aplicação web gera uma tabela contendo uma matriz, insirindo a quantidade de linhas, colunas e a transcrição da lei de formação em código JavaScript.
